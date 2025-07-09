@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>报名成功口碑礼金</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -22,7 +22,7 @@
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
             position: relative;
-            padding: 20px;
+            padding: 10px; /* 减少页面内边距 */
             overflow-x: hidden;
         }
 
@@ -47,7 +47,7 @@
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
-            padding-bottom: 50px;
+            padding-bottom: 30px; /* 减少底部内边距 */
         }
 
         .container {
@@ -57,24 +57,24 @@
             flex-direction: column;
             align-items: center;
             z-index: 10;
-            padding: 20px 0;
+            padding: 10px 0; /* 减少容器内边距 */
         }
 
         /* 顶部Logo区域 - 确保Logo完美居中 */
         .logo-container {
             position: relative;
-            width: 150px;
-            height: 150px;
+            width: 100px; /* 减小Logo容器大小 */
+            height: 100px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* 减少底部间距 */
             backdrop-filter: blur(5px);
             border: 2px solid rgba(255, 217, 0, 0.5);
             box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-            padding: 10px;
+            padding: 5px; /* 减少内边距 */
         }
 
         .logo-svg {
@@ -93,12 +93,12 @@
 
         /* 标题样式 - 取消文字阴影 */
         .title {
-            font-size: 3.5rem;
+            font-size: 2rem; /* 减小标题字体大小 */
             font-weight: bold;
             color: #fff;
             text-align: center;
-            margin-bottom: 40px;
-            letter-spacing: 5px;
+            margin-bottom: 20px; /* 减少底部间距 */
+            letter-spacing: 3px; /* 减少字母间距 */
             position: relative;
             text-shadow: none;
             line-height: 1.2;
@@ -112,10 +112,10 @@
         .title span:after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -3px; /* 减小下划线位置 */
             left: 0;
             width: 100%;
-            height: 3px;
+            height: 2px; /* 减小下划线高度 */
             background: linear-gradient(90deg, transparent, #FFD700, transparent);
             animation: underline 3s infinite;
         }
@@ -133,19 +133,19 @@
         /* 红包容器 */
         .red-envelope {
             position: relative;
-            width: 320px;
-            height: 420px;
+            width: 280px; /* 减小红包容器宽度 */
+            height: 380px; /* 减小红包容器高度 */
             background: linear-gradient(145deg, #d62828, #a30000);
             border-radius: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 20px 20px;
+            padding: 30px 15px 15px; /* 减少内边距 */
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
             overflow: hidden;
             transform-style: preserve-3d;
             perspective: 1000px;
-            margin-top: 40px;
+            margin-top: 20px; /* 减少顶部间距 */
         }
 
         .red-envelope:before {
@@ -162,9 +162,9 @@
 
         .envelope-top {
             position: absolute;
-            top: -30px;
-            width: 350px;
-            height: 80px;
+            top: -20px; /* 调整顶部位置 */
+            width: 300px; /* 减小顶部宽度 */
+            height: 60px; /* 减小顶部高度 */
             background: linear-gradient(160deg, #e63946, #d62828);
             border-radius: 50%;
             z-index: 2;
@@ -177,8 +177,8 @@
         .envelope-top:before {
             content: '';
             position: absolute;
-            width: 100px;
-            height: 100px;
+            width: 80px; /* 减小金色印章背景大小 */
+            height: 80px;
             background: rgba(255, 215, 0, 0.3);
             border-radius: 50%;
             filter: blur(10px);
@@ -186,9 +186,9 @@
 
         .gold-seal {
             position: absolute;
-            top: 15px;
-            width: 70px;
-            height: 70px;
+            top: 10px; /* 调整金色印章位置 */
+            width: 50px; /* 减小金色印章大小 */
+            height: 50px;
             background: radial-gradient(circle, #FFD700, #D4AF37);
             border-radius: 50%;
             display: flex;
@@ -200,7 +200,7 @@
         }
 
         .gold-seal i {
-            font-size: 36px;
+            font-size: 24px; /* 减小金色印章图标大小 */
             color: #a30000;
         }
 
@@ -216,7 +216,7 @@
 
         /* 金额展示 */
         .amount-display {
-            margin-top: 60px;
+            margin-top: 40px; /* 减少顶部间距 */
             text-align: center;
             z-index: 2;
             flex-grow: 1;
@@ -226,35 +226,35 @@
         }
 
         .amount-label {
-            font-size: 1.5rem;
+            font-size: 1.2rem; /* 减小金额标签字体大小 */
             color: #FFD700;
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* 减少底部间距 */
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
 
         .amount {
-            font-size: 6rem;
+            font-size: 4rem; /* 减小金额字体大小 */
             font-weight: bold;
             color: #FFD700;
             text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
-            margin: 20px 0;
+            margin: 10px 0; /* 减少上下间距 */
             transition: all 0.5s ease;
             line-height: 1;
         }
 
         .currency {
-            font-size: 3rem;
+            font-size: 2rem; /* 减小货币符号字体大小 */
             color: #FFD700;
             vertical-align: super;
-            margin-right: 5px;
+            margin-right: 3px; /* 减少右侧间距 */
         }
 
         /* 按钮样式 - 确保按钮可见 */
         .generate-btn {
             background: linear-gradient(to right, #FFD700, #D4AF37);
             border: none;
-            padding: 16px 50px;
-            font-size: 1.5rem;
+            padding: 12px 30px; /* 减少按钮内边距 */
+            font-size: 1.2rem; /* 减小按钮字体大小 */
             color: #a30000;
             border-radius: 50px;
             cursor: pointer;
@@ -267,7 +267,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px; /* 减少图标和文字间距 */
             animation: pulse 2s infinite;
             margin: 10px 0 20px;
         }
@@ -325,13 +325,13 @@
         /* 祝福语 */
         .blessing {
             color: rgba(255, 255, 255, 0.9);
-            font-size: 1.2rem;
+            font-size: 1rem; /* 减小祝福语字体大小 */
             text-align: center;
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-            line-height: 1.6;
+            line-height: 1.4; /* 减小行高 */
             z-index: 2;
-            max-width: 80%;
-            margin-bottom: 15px;
+            max-width: 90%; /* 增加最大宽度 */
+            margin-bottom: 10px; /* 减少底部间距 */
         }
 
         /* 粒子动画 */
@@ -347,8 +347,8 @@
 
         .particle {
             position: absolute;
-            width: 10px;
-            height: 10px;
+            width: 8px; /* 减小粒子大小 */
+            height: 8px;
             background: rgba(255, 215, 0, 0.7);
             border-radius: 50%;
             box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
@@ -378,33 +378,7 @@
         /* 响应式设计 */
         @media (max-width: 768px) {
             .title {
-                font-size: 2.5rem;
-            }
-
-            .red-envelope {
-                width: 300px;
-                height: 400px;
-            }
-
-            .amount {
-                font-size: 5rem;
-            }
-
-            .generate-btn {
-                padding: 14px 40px;
-                font-size: 1.3rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .title {
                 font-size: 2rem;
-                letter-spacing: 3px;
-            }
-
-            .logo-container {
-                width: 120px;
-                height: 120px;
             }
 
             .red-envelope {
@@ -417,8 +391,34 @@
             }
 
             .generate-btn {
-                padding: 12px 35px;
+                padding: 12px 30px;
                 font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.8rem;
+                letter-spacing: 2px;
+            }
+
+            .logo-container {
+                width: 80px;
+                height: 80px;
+            }
+
+            .red-envelope {
+                width: 260px;
+                height: 360px;
+            }
+
+            .amount {
+                font-size: 3.5rem;
+            }
+
+            .generate-btn {
+                padding: 10px 25px;
+                font-size: 1.1rem;
             }
         }
 
@@ -428,7 +428,7 @@
             display: flex;
             justify-content: center;
             margin-top: auto;
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* 减少底部间距 */
             z-index: 10;
         }
 
@@ -437,7 +437,7 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            height: 30px;
+            height: 20px; /* 减小底部装饰高度 */
             background: linear-gradient(160deg, #e63946, #d62828);
             border-radius: 50% 50% 0 0;
             z-index: 2;
@@ -463,12 +463,12 @@
         .form-title {
             background: linear-gradient(145deg, #d62828, #a30000);
             color: #FFD700;
-            padding: 12px 20px;
-            font-size: 1.5rem;
+            padding: 10px 15px; /* 减少内边距 */
+            font-size: 1.2rem; /* 减小字体大小 */
             font-weight: bold;
             text-align: center;
             border-radius: 15px 15px 0 0;
-            margin-top: 20px;
+            margin-top: 10px; /* 减少顶部间距 */
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             position: relative;
         }
@@ -476,7 +476,7 @@
         .form-title:before {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -3px; /* 减小下划线位置 */
             left: 50%;
             transform: translateX(-50%);
             width: 80%;
@@ -486,10 +486,10 @@
 
         /* 表单容器 - 增加圆角 */
         .form-container {
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* 减少底部间距 */
             width: 100%;
             max-width: 600px;
-            height: 400px;
+            height: 300px; /* 减小表单容器高度 */
             border-radius: 15px;
             /* 增加圆角 */
             overflow: hidden;
@@ -572,7 +572,7 @@
         // 创建粒子背景
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
-            const particleCount = 50;
+            const particleCount = 30; // 减少粒子数量
 
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
@@ -581,7 +581,7 @@
                 // 随机位置
                 const posX = Math.random() * 100;
                 const delay = Math.random() * 10;
-                const size = Math.random() * 8 + 4;
+                const size = Math.random() * 6 + 2; // 减小粒子大小范围
                 const duration = Math.random() * 5 + 5;
 
                 particle.style.left = `${posX}%`;
